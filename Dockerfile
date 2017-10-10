@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get install -y python python-pip && pip install Flask
+RUN apt-get update && apt-get install -y python python-pip && pip install Flask
 
 ADD hello.py /tmp/hello.py
 
